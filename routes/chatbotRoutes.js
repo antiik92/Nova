@@ -1,5 +1,6 @@
 const express = require('express');
-const { handleChat } = require('../controllers/chatbotController');
+const { handleChat } = require('../utils/openaiClient');
+
 const router = express.Router();
 
 router.post('/chat', handleChat);
